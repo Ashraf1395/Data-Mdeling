@@ -1,0 +1,17 @@
+Vaccine Database
+
+I have create one fact table Vaccination to store all informations like vaccine number,person,doctor,vaccine,vaccination_camp,date and several dimension table to get more details
+
+Dimension tables like:
+  Vaccine: To store details like vaccine_name,type:whether first dose or second or booster,manufacturer
+    a sub-dimension table to get more details with a manufacturer table to store manufacturer location,batchnumber date created
+  Doctor: To store information about the doctor
+  Person: To store information about he person
+  Vaccination Camp: To store what type of vaccination camp it is: whether a hospital or an ngo or in a locality or goverment hospital or house
+  
+We can use vaccinaton camp table to get details whether which place is suitable for vaccination where most people find sesure to put vaccine
+How many vaccines are being given daily and how many vacines are created so that everyone can get vaccines
+Location where most vaccnine are done
+
+we can join them with external dbs like data of a city how many people live there and compare it with our db find percentage of people have done vaccination who are remaining which localiites are remaining so that we can do a awareness campaign there 
+and similary lot of other things.
