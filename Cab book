@@ -1,0 +1,14 @@
+Cab Book Database
+
+It has a fact table rider to track all informations regarding the ride like customer,driver,location,ride_number,date,Source and Destination and the bill 
+
+It has dimension tables like:
+  Customer details to store the details of customer
+  Driver details to store details of the cab driver:
+    A sub-dimension table to store the details of the vehicle the driver drives
+ We can use joins of customer and driver tables to find which locations have maximum number of customers and how many drivers are there if they are less we can do some marketing campaigns to aqquire drivers similarly for customers.
+ we can also find places where our cab book app is not doing great
+ 
+ We can also add Distance travelled in the fact table if needed and use it to find what are the avg disntace of rides and this can help us to find upto what distance customers like to book cab 
+ 
+ We can add a feedback table as well if need to get customers feedback of how can we improve our rides 
