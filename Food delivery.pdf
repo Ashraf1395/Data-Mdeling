@@ -1,0 +1,13 @@
+Food Delivery
+
+We have one fact table order to track details like order number,customer ,restaurant,recipe,delivery bill etc
+The different dimension tables:
+  Customer details to store customer details
+  Delivery boy details
+  Restaurant details
+  Recipe details
+We can use fact table to find which recipe is famous is in which restaurant or which restaurant gives which recipe
+select recipe_name,restaunant_name from restaurant inner join order order o on r.restaurant_id=o.restaurant_id inner join recipe re on re.recipe_id=o.recipe_id 
+group by o.restaurant_name
+It was a basic example we can play around it by adding count of recipes and finding most famous recipe with windowing functions
+or direclty among all recipe which is famous among customers  or which restaurant is most famous among customers
